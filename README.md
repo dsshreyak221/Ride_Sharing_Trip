@@ -19,14 +19,13 @@ This project solves that problem by storing trip data in a relational database a
 ## Technologies Used
 - SQL (MySQL)
 - MySQL Workbench
-- GitHub
 
 ---
 
 ## ER Diagram
 The ER diagram below represents the structure of the database and the relationships between users, drivers, and trips.
 
-
+https://github.com/dsshreyak221/Ride_Sharing_Trip/blob/cc86bde50a64b6638712e4f8e250130c030038fa/RIde_Sharing_Trip.png
 
 ---
 
