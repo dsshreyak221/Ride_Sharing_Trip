@@ -1,43 +1,52 @@
 # Ride Sharing Trip Analysis (SQL Project)
 
 ## About the Project
-This project is based on analyzing ride-sharing trip data using SQL.  
-The main idea behind this project is to understand how trip-related data can be stored in a database and how meaningful insights can be extracted using SQL queries.
+This project focuses on analyzing ride-sharing trip data using SQL.  
+The idea behind this project is to understand how ride-sharing platforms store trip information and how meaningful insights can be generated using relational databases.
 
-Through this project, I worked on real-world scenarios similar to ride-sharing platforms, where trip details such as distance, fare, drivers, and riders need to be analyzed efficiently.
+The project uses a simple but realistic database design involving users, drivers, and trips.
 
 ---
 
 ## Problem Statement
-Ride-sharing services generate a large amount of trip data every day.  
-Without proper data organization and analysis, it becomes difficult to track trips, calculate fares, and evaluate driver performance.
+Ride-sharing platforms generate a large amount of data every day, such as trip details, distance traveled, and fare amounts.  
+Without a structured database, it becomes difficult to analyze trips, track driver activity, or understand user behavior.
 
-This project solves this problem by using a relational database and SQL queries to analyze trip data in a structured way.
-
----
-
-## What This Project Does
-- Stores ride-sharing trip information in database tables
-- Analyzes trips based on distance and fare
-- Retrieves driver-wise and rider-wise trip details
-- Uses SQL queries to perform filtering, grouping, and aggregation
-- Helps in understanding patterns in trip data
+This project solves that problem by storing trip data in a relational database and analyzing it using SQL queries.
 
 ---
 
 ## Technologies Used
 - SQL (MySQL)
 - MySQL Workbench
+- GitHub
+
+---
+
+## ER Diagram
+The ER diagram below represents the structure of the database and the relationships between users, drivers, and trips.
+
+
 
 ---
 
 ## Database Overview
-The database consists of multiple related tables, such as:
-- `trips` – contains trip details like distance, fare, and trip date
-- `drivers` – contains driver information
-- `riders` – contains rider information
+The database consists of three main tables:
 
-Primary keys and foreign keys are used to connect these tables and maintain data consistency.
+- **users**  
+  Stores user details such as user name and city.
+
+- **drivers**  
+  Stores driver information including driver name and city.
+
+- **trips**  
+  Stores trip details such as trip date, time, distance traveled, and fare.
+  Each trip is linked to one user and one driver using foreign keys.
+
+### Relationships
+- One user can have multiple trips (one-to-many)
+- One driver can complete multiple trips (one-to-many)
+- Each trip is associated with exactly one user and one driver
 
 ---
 
@@ -46,21 +55,6 @@ Primary keys and foreign keys are used to connect these tables and maintain data
 2. Create a new database
 3. Import the file `ride_sharing_trip.sql`
 4. Execute the SQL script
-5. Run the queries to view and analyze the trip data
+5. Run SQL queries to analyze the trip data
 
 ---
-
-## Sample Analysis Performed
-- Total number of trips
-- Average fare per trip
-- Trips completed by each driver
-- Highest earning drivers
-- Distance-based trip analysis
-
----
-
-## What I Learned
-- How to design relational databases
-- Writing SQL queries using JOINs, GROUP BY, and aggregate functions
-- Analyzing real-world data using SQL
-- Understanding how databases are used in practical applications
