@@ -55,5 +55,19 @@ The database consists of three main tables:
 3. Import the file `ride_sharing_trip.sql`
 4. Execute the SQL script
 5. Run SQL queries to analyze the trip data
+---
+
+## Sample Analysis Performed
+- Total number of trips
+- Average fare per trip
+- Trips completed by each driver
+- Total distance covered per driver
+- Highest earning drivers
 
 ---
+
+## What I Learned
+- Designing relational databases using ER diagrams
+- Implementing one-to-many relationships
+- Writing SQL queries using JOINs and aggregate functions
+- Analyzing real-world data using SQL
